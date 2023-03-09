@@ -1,4 +1,4 @@
-module Fetch(clk,F_predPC,f_predPC,M_valA,W_valM,M_Cnd,M_icode,W_icode,F_stall,D_stall,D_bubble,D_stat,D_icode,D_ifun,D_rA,D_rB,D_valC,D_valP,current_instruction,D_stat);
+module Fetch(clk,F_predPC,f_predPC,M_valA,W_valM,M_Cnd,M_icode,W_icode,F_stall,D_stall,D_bubble,D_stat,D_icode,D_ifun,D_rA,D_rB,D_valC,D_valP,current_instruction,D_stat,PC);
 
 
 // The inputs
@@ -24,7 +24,7 @@ output reg [63:0] D_valP ;
 output reg [0:3] D_stat;
 
 // Registers
-reg [63:0] PC;
+output reg [63:0] PC;
 reg [0:7] byte1 ;//ifun icode
 reg [0:7] byte2 ;//rA rB
 reg [3:0] icode,ifun;
@@ -174,8 +174,8 @@ always @(*)begin
     stat = 4'b1000;
     if(halt_prog == 1)begin 
         stat = 4'b0100;//halt//HLT
-        $display("halt");
-        $finish;
+        // $display("halt");
+        // $finish;
     end
     if((pcvalid == 1))begin 
         stat = 4'b0010;//Memory error//ADR

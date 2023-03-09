@@ -1,10 +1,10 @@
-module Execute(clk,E_stat,E_icode,E_ifun,E_valA,E_valB,E_valC,E_destE,E_destM,M_bubble,setcc,e_valE,e_destE,e_Cnd,M_stat,M_icode,M_Cnd,M_valE,M_valA,M_destE,M_destM,cc_in);
+module Execute(clk,E_stat,E_icode,E_ifun,E_valA,E_valB,E_valC,E_destE,E_destM,setcc,e_valE,e_destE,e_Cnd,M_stat,M_icode,M_Cnd,M_valE,M_valA,M_destE,M_destM,cc_in);
 
   input clk;
   input [0:3] E_stat;
   input [3:0] E_icode,E_ifun,E_destE,E_destM;
   input signed [63:0] E_valA,E_valB,E_valC;
-  input M_bubble,setcc;
+  input setcc;
 
   output reg signed [63:0] e_valE,M_valE,M_valA;
   output reg [3:0] e_destE,M_destE,M_destM,M_icode;
@@ -159,18 +159,18 @@ module Execute(clk,E_stat,E_icode,E_ifun,E_valA,E_valB,E_valC,E_destE,E_destM,M_
 
   always@(posedge clk)
   begin
-    if(M_bubble)
-    begin
-      M_stat <= 4'b1000;
-      M_icode <= 4'b0001;
-      M_Cnd <= 1;
-      M_valE <= 0;
-      M_valA <= 0;
-      M_destE <= 4'hF;
-      M_destM <= 4'hF;
-    end
-    else
-    begin
+    // if(M_bubble)
+    // begin
+    //   M_stat <= 4'b1000;
+    //   M_icode <= 4'b0001;
+    //   M_Cnd <= 1;
+    //   M_valE <= 0;
+    //   M_valA <= 0;
+    //   M_destE <= 4'hF;
+    //   M_destM <= 4'hF;
+    // end
+    // else
+    // begin
       M_stat <= E_stat;
       M_icode <= E_icode;
       M_Cnd <= e_Cnd;
@@ -178,6 +178,6 @@ module Execute(clk,E_stat,E_icode,E_ifun,E_valA,E_valB,E_valC,E_destE,E_destM,M_
       M_valA <= E_valA;
       M_destE <= e_destE;
       M_destM <= E_destM;
-    end
+    // end
   end
 endmodule

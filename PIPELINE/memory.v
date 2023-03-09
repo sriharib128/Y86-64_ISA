@@ -1,4 +1,4 @@
-module data_memory(clk,M_stat,M_icode,M_Cnd,M_valE,M_valA,M_destE,M_destM,m_stat,m_valM,W_stall,W_stat,W_icode,W_valE,W_valM,W_destE,W_destM);
+module data_memory(clk,M_stat,M_icode,M_Cnd,M_valE,M_valA,M_destE,M_destM,m_stat,m_valM,W_stat,W_icode,W_valE,W_valM,W_destE,W_destM);
 
   input clk;
   input [0:3] M_stat;
@@ -8,7 +8,6 @@ module data_memory(clk,M_stat,M_icode,M_Cnd,M_valE,M_valA,M_destE,M_destM,m_stat
   input [63:0] M_valA;
   input [3:0] M_destE;
   input [3:0] M_destM;
-  input W_stall;
 
   output reg [0:3] m_stat;
   output reg signed [63:0] m_valM;

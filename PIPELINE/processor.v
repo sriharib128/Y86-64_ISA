@@ -18,7 +18,7 @@ module processor;
     reg [0:79] current_instruction;
     wire [3:0] D_ifun,D_icode,D_rA,D_rB;
     wire signed [63:0] D_valC;
-    wire [63:0] f_predPC,D_valP;
+    wire [63:0] f_predPC,D_valP,PC;
     wire  halt_prog , is_instruction_valid , pcvalid;
 
     wire [0:3] E_stat,D_stat,M_stat,W_stat,m_stat;
@@ -33,48 +33,47 @@ module processor;
     wire M_Cnd,e_Cnd;
     wire [2:0] cc_in;
 
-    wire F_stall,D_stall,D_bubble,E_bubble,M_bubble,W_stall,setcc;
-
+    wire F_stall,D_stall,D_bubble,E_bubble,setcc;
 
     wire signed [63:0] register_memory0 , register_memory1 , register_memory2 ,register_memory3 , register_memory4 , register_memory5 ,register_memory6 ,register_memory7 ,register_memory8 , register_memory9 , register_memory10 ,register_memory11 , register_memory12 , register_memory13 , register_memory14; 
 
-    Fetch fetch1(clk,F_predPC,f_predPC,M_valA,W_valM,M_Cnd,M_icode,W_icode,F_stall,D_stall,D_bubble,D_stat,D_icode,D_ifun,D_rA,D_rB,D_valC,D_valP,current_instruction,D_stat);
+    Fetch fetch1(clk,F_predPC,f_predPC,M_valA,W_valM,M_Cnd,M_icode,W_icode,F_stall,D_stall,D_bubble,D_stat,D_icode,D_ifun,D_rA,D_rB,D_valC,D_valP,current_instruction,D_stat,PC);
     decode_and_writeback decode1(clk,D_bubble,E_bubble,D_stat,D_icode,D_ifun,D_rA,D_rB,D_valC,D_valP,
                             e_destE,e_valE,M_destE,M_valE,M_destM,m_valM,W_destM,W_valM,W_destE,W_valE,
                             E_stat,E_icode,E_ifun,E_valC,E_valA,E_valB,E_destE,E_destM,E_srcA,E_srcB,
                             W_icode,d_srcA,d_srcB,
                             register_memory0 , register_memory1 , register_memory2 ,register_memory3 , register_memory4 , register_memory5 ,register_memory6 ,register_memory7 ,register_memory8 , register_memory9 , register_memory10 ,register_memory11 , register_memory12 , register_memory13 , register_memory14) ;
 
-    Execute execute1(clk,E_stat,E_icode,E_ifun,E_valA,E_valB,E_valC,E_destE,E_destM,M_bubble,setcc,e_valE,e_destE,e_Cnd,M_stat,M_icode,M_Cnd,M_valE,M_valA,M_destE,M_destM,cc_in);
-    data_memory memory1(clk,M_stat,M_icode,M_Cnd,M_valE,M_valA,M_destE,M_destM,m_stat,m_valM,W_stall,W_stat,W_icode,W_valE,W_valM,W_destE,W_destM);
-    pipeline_ctrl ctrl1(D_icode,d_srcA,d_srcB,E_icode,E_destM,e_Cnd,M_icode,m_stat,W_stat,setcc,F_stall,D_stall,D_bubble,E_bubble,M_bubble,W_stall);
+    Execute execute1(clk,E_stat,E_icode,E_ifun,E_valA,E_valB,E_valC,E_destE,E_destM,setcc,e_valE,e_destE,e_Cnd,M_stat,M_icode,M_Cnd,M_valE,M_valA,M_destE,M_destM,cc_in);
+    data_memory memory1(clk,M_stat,M_icode,M_Cnd,M_valE,M_valA,M_destE,M_destM,m_stat,m_valM,W_stat,W_icode,W_valE,W_valM,W_destE,W_destM);
+    pipeline_ctrl ctrl1(D_icode,d_srcA,d_srcB,E_icode,E_destM,e_Cnd,M_icode,m_stat,W_stat,setcc,F_stall,D_stall,D_bubble,E_bubble);
     
 
-  always@(F_predPC) begin  
+  always@(PC) begin  
     current_instruction={
-      Instruction_memory[F_predPC],
-      Instruction_memory[F_predPC+1],
-      Instruction_memory[F_predPC+2],
-      Instruction_memory[F_predPC+3],
-      Instruction_memory[F_predPC+4],
-      Instruction_memory[F_predPC+5],
-      Instruction_memory[F_predPC+6],
-      Instruction_memory[F_predPC+7],
-      Instruction_memory[F_predPC+8],
-      Instruction_memory[F_predPC+9]
+      Instruction_memory[PC],
+      Instruction_memory[PC+1],
+      Instruction_memory[PC+2],
+      Instruction_memory[PC+3],
+      Instruction_memory[PC+4],
+      Instruction_memory[PC+5],
+      Instruction_memory[PC+6],
+      Instruction_memory[PC+7],
+      Instruction_memory[PC+8],
+      Instruction_memory[PC+9]
     };
   end
 
-    always@(stat_con) begin
-        if(stat_con==4'b0100) begin//halt//HLT
+    always@(W_stat) begin
+        if(W_stat==4'b0100) begin//halt//HLT
         $display("halt");
         $finish;
         end
-        else if(stat_con==4'b0010) begin//Memory error//ADR
+        else if(W_stat==4'b0010) begin//Memory error//ADR
         $display("mem_error");
         $finish;
         end
-        else if(stat_con==4'b0001) begin//invalid instruction//INS
+        else if(W_stat==4'b0001) begin//invalid instruction//INS
         $display("instr_invalid");
         $finish;
         end
@@ -105,7 +104,7 @@ always @(posedge clk)
     $display("Decode stage E_ :- clk=",clk," E_stat=",E_stat," icode=",E_icode," ifun=",E_ifun," rsp =",register_memory4,"\n \t\t > valA=",E_valA," valB=",E_valB, " valC=",E_valC," destE=",E_destE," destM=",E_destM," srcA=",E_srcA," srcB=",E_srcB);
     $display("Execute stage M_ :- clk=",clk," M_stat=",M_stat," icode=",M_icode," rsp =",register_memory4,"\n \t\t > CND=",e_Cnd," OF",cc_in[2]," SF",cc_in[1]," ZF",cc_in[0]," valA =",M_valA," valE=",M_valE," destE=",M_destE," destM=",M_destM);
     $display("Memory stage W_:- clk=",clk," W_stat=",W_stat," icode=",W_icode," rsp=",register_memory4,"\n \t\t > valM =",W_valM," valE=",W_valE," destE=",W_destE," destM=",W_destM);
-    $display("fetch_stall",F_stall," D_bubble",D_bubble," D_stall",D_stall," E_bubble",E_bubble," M_bubble",M_bubble);
+    $display("fetch_stall",F_stall," D_bubble",D_bubble," D_stall",D_stall," E_bubble",E_bubble,"");
     $display("------------------------------------------------------------");
     end
 initial begin
