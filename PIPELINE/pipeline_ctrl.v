@@ -29,7 +29,7 @@ always @(*) begin
 
     F_stall <= ( ((E_icode == 4'h3 || E_icode == 4'hB) && (E_destM == d_srcA || E_destM == d_srcB)) || (D_icode == 4'h9 || E_icode == 4'h9 || M_icode == 4'h9));
     D_stall <= ((E_icode == 4'h3 || E_icode == 4'hB) && (E_destM == d_srcA || E_destM == d_srcB));
-    D_bubble <= (( E_icode == 4'h7 && !e_Cnd ) || (!(E_icode == 4'h3 || E_icode == 4'hB)  && (E_destM == d_srcA || E_destM== d_srcB) && (D_icode == 4'h9 || E_icode == 4'h9 || M_icode == 4'h9)));
+    D_bubble <= (( E_icode == 4'h7 && !e_Cnd ) || (!((E_icode == 4'h3 || E_icode == 4'hB)  && (E_destM == d_srcA || E_destM== d_srcB)) && (D_icode == 4'h9 || E_icode == 4'h9 || M_icode == 4'h9)));
     E_bubble <= (( E_icode == 4'h7 && !e_Cnd ) || ((E_icode == 4'h3 || E_icode == 4'hB)  && (E_destM == d_srcA || E_destM== d_srcB)));
 
     if(E_icode == 4'h0 | m_stat != 4'b1000 | W_stat != 4'b1000)

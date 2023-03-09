@@ -36,18 +36,20 @@ reg halt_prog=1'b0;
 reg [0:3] stat;
 reg [3:0] rA,rB;
 
-// initial begin
-//   PC = F_predPC;
-// end
-
-always @(*) 
+always @(*)
   begin
     if(M_icode == 4'b0111 & !M_Cnd)
-      PC = M_valA;
+      begin
+        PC <= M_valA;
+        f_predPC <=M_valA;
+      end
     else if(W_icode == 4'b1001 )
-      PC = W_valM;
+      begin
+        PC <= W_valM;
+        f_predPC <= W_valM;
+      end
     else
-      PC = F_predPC;
+      PC <= F_predPC;
   end
 
 always@(*) 
@@ -188,12 +190,13 @@ always @(*)begin
   end
 
   always @(posedge clk) begin
-
+    // PC <= F_predPC;
     if (F_stall) 
       begin
+        // F_predPC <= f_predPC;
         // PC = F_predPC;
       end
-    else if (D_stall) 
+    if (D_stall) 
       begin  
       end
     else if (D_bubble) 

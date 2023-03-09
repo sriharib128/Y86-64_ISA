@@ -94,16 +94,17 @@ always #10  begin
     end
 always @(posedge clk) 
         begin 
+        if(!F_stall)
             F_predPC <= f_predPC ;
         end
 
 always @(posedge clk)
     begin 
     $display("\n------------------------------------------------------------");
-    $display("Fetch stage :- clk=",clk," D_stat=",D_stat," F_predPC=",F_predPC," f_predPC=",f_predPC," icode=",D_icode," ifun=",D_ifun,"\n \t\t > rsp =",register_memory4," rA=",D_rA," rB=",D_rB," valC=",D_valC," D_valP=",D_valP);
-    $display("Decode stage :- clk=",clk," E_stat=",E_stat," icode=",E_icode," ifun=",E_ifun," rsp =",register_memory4,"\n \t\t > valA=",E_valA," valB=",E_valB, " valC=",E_valC," destE=",E_destE," destM=",E_destM," srcA=",E_srcA," srcB=",E_srcB);
-    $display("Execute stage :- clk=",clk," M_stat=",M_stat," icode=",M_icode," rsp =",register_memory4,"\n \t\t > CND=",e_Cnd," OF",cc_in[2]," SF",cc_in[1]," ZF",cc_in[0]," valA =",M_valA," valE=",M_valE," destE=",M_destE," destM=",M_destM);
-    $display("Memory stage :- clk=",clk," W_stat=",W_stat," icode=",W_icode," rsp=",register_memory4,"\n \t\t > valM =",W_valM," valE=",W_valE," destE=",W_destE," destM=",W_destM);
+    $display("Fetch stage D_ :- clk=",clk," D_stat=",D_stat," F_predPC=",F_predPC," f_predPC=",f_predPC," icode=",D_icode," ifun=",D_ifun,"\n \t\t > rsp =",register_memory4," rA=",D_rA," rB=",D_rB," valC=",D_valC," D_valP=",D_valP);
+    $display("Decode stage E_ :- clk=",clk," E_stat=",E_stat," icode=",E_icode," ifun=",E_ifun," rsp =",register_memory4,"\n \t\t > valA=",E_valA," valB=",E_valB, " valC=",E_valC," destE=",E_destE," destM=",E_destM," srcA=",E_srcA," srcB=",E_srcB);
+    $display("Execute stage M_ :- clk=",clk," M_stat=",M_stat," icode=",M_icode," rsp =",register_memory4,"\n \t\t > CND=",e_Cnd," OF",cc_in[2]," SF",cc_in[1]," ZF",cc_in[0]," valA =",M_valA," valE=",M_valE," destE=",M_destE," destM=",M_destM);
+    $display("Memory stage W_:- clk=",clk," W_stat=",W_stat," icode=",W_icode," rsp=",register_memory4,"\n \t\t > valM =",W_valM," valE=",W_valE," destE=",W_destE," destM=",W_destM);
     $display("fetch_stall",F_stall," D_bubble",D_bubble," D_stall",D_stall," E_bubble",E_bubble," M_bubble",M_bubble);
     $display("------------------------------------------------------------");
     end
@@ -178,7 +179,7 @@ Instruction_memory[90] = 8'h60;//OPq
 Instruction_memory[91] = 8'h9A;
 
 Instruction_memory[92] = 8'h10;//no op
-Instruction_memory[93] = 8'h00;//halt
+Instruction_memory[93] = 8'h10;//halt
 
 Instruction_memory[94] = 8'h90;// return
 end
