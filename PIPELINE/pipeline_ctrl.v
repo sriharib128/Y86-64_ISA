@@ -23,10 +23,10 @@ always @(*) begin
     D_bubble = 1'b0;
     E_bubble = 1'b0;
 
-    F_stall <= ( ((E_icode == 4'h3 || E_icode == 4'hB) && ( ( (E_destM == d_srcA) && (E_destM != 4'hF) ) || ( (E_destM == d_srcB) && (E_destM != 4'hF) ) )) || (D_icode == 4'h9 || E_icode == 4'h9 || M_icode == 4'h9));
-    D_stall <= ((E_icode == 4'h3 || E_icode == 4'hB) && ( ( (E_destM == d_srcA) && (E_destM != 4'hF) ) || ( (E_destM == d_srcB) && (E_destM != 4'hF) ) ));
-    D_bubble <= (( E_icode == 4'h7 && !e_Cnd ) || (!((E_icode == 4'h3 || E_icode == 4'hB)  && ( ( (E_destM == d_srcA) && (E_destM != 4'hF) ) || ( (E_destM == d_srcB) && (E_destM != 4'hF) ) )) && (D_icode == 4'h9 || E_icode == 4'h9 || M_icode == 4'h9)));
-    E_bubble <= (( E_icode == 4'h7 && !e_Cnd ) || ((E_icode == 4'h3 || E_icode == 4'hB)  && (  ( (E_destM == d_srcA) && (E_destM != 4'hF) ) || ( (E_destM == d_srcB) && (E_destM != 4'hF) ) )));
+    F_stall <= ( ((E_icode == 4'h5 || E_icode == 4'hB) && ( ( (E_destM == d_srcA) && (E_destM != 4'hF) ) || ( (E_destM == d_srcB) && (E_destM != 4'hF) ) )) || (D_icode == 4'h9 || E_icode == 4'h9 || M_icode == 4'h9));
+    D_stall <= ((E_icode == 4'h5 || E_icode == 4'hB) && ( ( (E_destM == d_srcA) && (E_destM != 4'hF) ) || ( (E_destM == d_srcB) && (E_destM != 4'hF) ) ));
+    D_bubble <= (( E_icode == 4'h7 && !e_Cnd ) || (!((E_icode == 4'h5 || E_icode == 4'hB)  && ( ( (E_destM == d_srcA) && (E_destM != 4'hF) ) || ( (E_destM == d_srcB) && (E_destM != 4'hF) ) )) && (D_icode == 4'h9 || E_icode == 4'h9 || M_icode == 4'h9)));
+    E_bubble <= (( E_icode == 4'h7 && !e_Cnd ) || ((E_icode == 4'h5 || E_icode == 4'hB)  && (  ( (E_destM == d_srcA) && (E_destM != 4'hF) ) || ( (E_destM == d_srcB) && (E_destM != 4'hF) ) )));
 
     if(E_icode == 4'h0 | m_stat != 4'b1000 | W_stat != 4'b1000)
         begin
@@ -36,4 +36,4 @@ always @(*) begin
 
 endmodule
 
-// D_bubble <= (( E_icode == 4'h7 && !e_Cnd ) || (!(E_icode == 4'h3 || E_icode == 4'hB)  && (((E_destM == d_srcA)&(d_srcA != 15)) || ((E_destM== d_srcB)&(d_srcB != 15))) && (D_icode == 4'h9 || E_icode == 4'h9 || M_icode == 4'h9)));
+// D_bubble <= (( E_icode == 4'h7 && !e_Cnd ) || (!(E_icode == 4'h5 || E_icode == 4'hB)  && (((E_destM == d_srcA)&(d_srcA != 15)) || ((E_destM== d_srcB)&(d_srcB != 15))) && (D_icode == 4'h9 || E_icode == 4'h9 || M_icode == 4'h9)));
