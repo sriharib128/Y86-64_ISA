@@ -55,6 +55,8 @@ always @(*)
 always@(*) 
 
   begin 
+    rA=4'hF;
+    rB=4'hF;
     byte1 = {current_instruction[0:7]} ;
     byte2 = {current_instruction[8:15]} ;
 

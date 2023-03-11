@@ -59,6 +59,11 @@ initial
 always@(*)
   begin
 
+    d_srcA = 4'hF;
+    d_srcB = 4'hF;
+    d_destE = 4'hF;
+    d_destM = 4'hF;
+
     if(D_icode == 4'b0010) //cmovxx
     begin
       d_srcA = D_rA;

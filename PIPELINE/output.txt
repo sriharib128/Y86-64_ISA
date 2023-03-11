@@ -157,3 +157,2221 @@ Memory stage :- clk=1 W_stat= 8 icode=10 rsp=                 254
 halt
 [Done] exit with code=0 in 0.09 seconds
 
+VCD info: dumpfile processor.vcd opened for output.
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= x F_predPC=                   0 f_predPC=                   1 icode= x ifun= x
+ 		 > rsp =                   x rA= x rB= x valC=                   x D_valP=                   x
+Decode stage E_ :- clk=1 E_stat= x icode= x ifun= x rsp =                   x
+ 		 > valA=                   x valB=                   x valC=                   x destE= x destM= x srcA= x srcB= x
+Execute stage M_ :- clk=1 M_stat= x icode= x rsp =                   x
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE= x destM= x
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                   x
+ 		 > valM =                   x valE=                   x destE= x destM= x
+fetch_stallx D_bubblex D_stallx E_bubblex
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   0 f_predPC=                   1 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA= x rB= x valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= x icode= x ifun= x rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15 srcA=15 srcB=15
+Execute stage M_ :- clk=1 M_stat= x icode= x rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE= x destM= x
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                 254
+ 		 > valM =                   x valE=                   x destE= x destM= x
+fetch_stallx D_bubblex D_stallx E_bubblex
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   0 f_predPC=                   1 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA= x rB= x valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15 srcA=15 srcB=15
+Execute stage M_ :- clk=1 M_stat= x icode= x rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                 254
+ 		 > valM =                   x valE=                   x destE= x destM= x
+fetch_stallx D_bubblex D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   0 f_predPC=                   1 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA= x rB= x valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15 srcA=15 srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   1 f_predPC=                   2 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA= x rB= x valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15 srcA=15 srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   2 f_predPC=                   4 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA= x rB= x valC=                   x D_valP=                   2
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15 srcA=15 srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   4 f_predPC=                  14 icode= 2 ifun= 0
+ 		 > rsp =                 254 rA= 1 rB= 2 valC=                   x D_valP=                   4
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15 srcA=15 srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  14 f_predPC=                  24 icode= 3 ifun= 0
+ 		 > rsp =                 254 rA=15 rB= 2 valC=                   2 D_valP=                  14
+Decode stage E_ :- clk=1 E_stat= 8 icode= 2 ifun= 0 rsp =                 254
+ 		 > valA=                  10 valB=                   0 valC=                   x destE= 2 destM=15 srcA= 1 srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=1 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  24 f_predPC=                  34 icode= 4 ifun= 0
+ 		 > rsp =                 254 rA= 2 rB= 4 valC=                   1 D_valP=                  24
+Decode stage E_ :- clk=1 E_stat= 8 icode= 3 ifun= 0 rsp =                 254
+ 		 > valA=                  10 valB=                   0 valC=                   2 destE= 2 destM=15 srcA= 1 srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 2 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                  10 valE=                  10 destE= 2 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  34 f_predPC=                  44 icode= 4 ifun= 0
+ 		 > rsp =                 254 rA= 5 rB= 3 valC=                   0 D_valP=                  34
+Decode stage E_ :- clk=1 E_stat= 8 icode= 4 ifun= 0 rsp =                 254
+ 		 > valA=                   2 valB=                 254 valC=                   1 destE= 2 destM=15 srcA= 2 srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 3 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                  10 valE=                   2 destE= 2 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 2 rsp=                 254
+ 		 > valM =                   x valE=                  10 destE= 2 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  44 f_predPC=                  46 icode= 5 ifun= 0
+ 		 > rsp =                 254 rA= 5 rB= 3 valC=                   0 D_valP=                  44
+Decode stage E_ :- clk=1 E_stat= 8 icode= 4 ifun= 0 rsp =                 254
+ 		 > valA=                  50 valB=                   3 valC=                   0 destE= 2 destM=15 srcA= 5 srcB= 3
+Execute stage M_ :- clk=1 M_stat= 8 icode= 4 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   2 valE=                 255 destE= 2 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 3 rsp=                 254
+ 		 > valM =                   x valE=                   2 destE= 2 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  46 f_predPC=                  56 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=10 valC=                   0 D_valP=                  46
+Decode stage E_ :- clk=1 E_stat= 8 icode= 5 ifun= 0 rsp =                 254
+ 		 > valA=                  50 valB=                   3 valC=                   0 destE= 2 destM= 5 srcA= 5 srcB= 3
+Execute stage M_ :- clk=1 M_stat= 8 icode= 4 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                  50 valE=                   3 destE= 2 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 4 rsp=                 254
+ 		 > valM =                   x valE=                 255 destE= 2 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  56 f_predPC=                  58 icode= 7 ifun= 3
+ 		 > rsp =                 254 rA= 9 rB=10 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 8 icode= 6 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=               12345 valC=                   0 destE=10 destM= 5 srcA= 9 srcB=10
+Execute stage M_ :- clk=1 M_stat= 8 icode= 5 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =                  50 valE=                   3 destE= 2 destM= 5
+Memory stage W_:- clk=1 W_stat= 8 icode= 4 rsp=                 254
+ 		 > valM =                   x valE=                   3 destE= 2 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  58 f_predPC=                  60 icode=10 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=15 valC=                  56 D_valP=                  58
+Decode stage E_ :- clk=1 E_stat= 8 icode= 7 ifun= 3 rsp =                 254
+ 		 > valA=                  55 valB=               12345 valC=                  56 destE=15 destM=15 srcA=15 srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 6 rsp =                 254
+ 		 > CND=1 OF0 SF0 ZF1 valA =              -12345 valE=                   0 destE=10 destM= 5
+Memory stage W_:- clk=1 W_stat= 8 icode= 5 rsp=                 254
+ 		 > valM =                  50 valE=                   3 destE= 2 destM= 5
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  60 f_predPC=                  80 icode=11 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=15 valC=                  56 D_valP=                  60
+Decode stage E_ :- clk=1 E_stat= 8 icode=10 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                  56 destE= 4 destM=15 srcA= 9 srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 7 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =                  55 valE=                   0 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 6 rsp=                 254
+ 		 > valM =                  50 valE=                   0 destE=10 destM= 5
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  80 f_predPC=                  90 icode= 8 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=15 valC=                  80 D_valP=                  69
+Decode stage E_ :- clk=1 E_stat= 8 icode=11 ifun= 0 rsp =                 254
+ 		 > valA=                 253 valB=                 253 valC=                  56 destE= 4 destM= 9 srcA= 4 srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode=10 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =              -12345 valE=                 253 destE= 4 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 7 rsp=                 254
+ 		 > valM =                  50 valE=                   0 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  90 f_predPC=                  92 icode= 3 ifun= 0
+ 		 > rsp =                 254 rA=15 rB= 2 valC=                   2 D_valP=                  90
+Decode stage E_ :- clk=1 E_stat= 8 icode= 8 ifun= 0 rsp =                 254
+ 		 > valA=                  69 valB=                 254 valC=                  80 destE= 4 destM= 9 srcA= 4 srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode=11 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =                 253 valE=                 254 destE= 4 destM= 9
+Memory stage W_:- clk=1 W_stat= 8 icode=10 rsp=                 254
+ 		 > valM =                  50 valE=                 253 destE= 4 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  92 f_predPC=                  93 icode= 6 ifun= 0
+ 		 > rsp =                 253 rA= 9 rB=10 valC=                   2 D_valP=                  92
+Decode stage E_ :- clk=1 E_stat= 8 icode= 3 ifun= 0 rsp =                 253
+ 		 > valA=                 253 valB=                 253 valC=                   2 destE= 2 destM= 9 srcA= 4 srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 8 rsp =                 253
+ 		 > CND=0 OF0 SF0 ZF1 valA =                  69 valE=                 253 destE= 4 destM= 9
+Memory stage W_:- clk=1 W_stat= 8 icode=11 rsp=                 253
+ 		 > valM =              -12345 valE=                 254 destE= 4 destM= 9
+fetch_stall1 D_bubble0 D_stall1 E_bubble1
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  92 f_predPC=                  93 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=10 valC=                   2 D_valP=                  92
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   0 valB=                   0 valC=                   0 destE=15 destM=15 srcA=15 srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 3 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =                 253 valE=                   2 destE= 2 destM= 9
+Memory stage W_:- clk=1 W_stat= 8 icode= 8 rsp=                 254
+ 		 > valM =              -12345 valE=                 253 destE= 4 destM= 9
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  93 f_predPC=                  94 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA= 9 rB=10 valC=                   2 D_valP=                  93
+Decode stage E_ :- clk=1 E_stat= 8 icode= 6 ifun= 0 rsp =                 253
+ 		 > valA=              -12345 valB=                   0 valC=                   2 destE=10 destM= 9 srcA= 9 srcB=10
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =                   0 valE=                   2 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 3 rsp=                 253
+ 		 > valM =              -12345 valE=                   2 destE= 2 destM= 9
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  94 f_predPC=                  94 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA= 9 rB=10 valC=                   2 D_valP=                  94
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=              -12345 valB=                   0 valC=                   2 destE=15 destM=15 srcA=15 srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 6 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -12345 destE=10 destM= 9
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 253
+ 		 > valM =              -12345 valE=                   2 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  94 f_predPC=                  94 icode= 9 ifun= 0
+ 		 > rsp =                 253 rA= 9 rB=10 valC=                   2 D_valP=                  95
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=              -12345 valB=                   0 valC=                   2 destE=15 destM=15 srcA=15 srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -12345 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 6 rsp=                 253
+ 		 > valM =              -12345 valE=              -12345 destE=10 destM= 9
+fetch_stall1 D_bubble1 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  94 f_predPC=                  94 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 9 ifun= 0 rsp =                 253
+ 		 > valA=                 253 valB=                 253 valC=                   2 destE= 4 destM=15 srcA= 4 srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -12345 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 253
+ 		 > valM =              -12345 valE=              -12345 destE=15 destM=15
+fetch_stall1 D_bubble1 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  94 f_predPC=                  94 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=                 253 valB=                 253 valC=                   0 destE=15 destM=15 srcA=15 srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 9 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE= 4 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 253
+ 		 > valM =              -12345 valE=              -12345 destE=15 destM=15
+fetch_stall1 D_bubble1 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  94 f_predPC=                  71 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=                 253 valB=                 253 valC=                   0 destE=15 destM=15 srcA=15 srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 9 rsp=                 253
+ 		 > valM =                  69 valE=                 254 destE= 4 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  71 f_predPC=                  46 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 5 rB= 6 valC=                   2 D_valP=                  71
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                 253 valB=                 253 valC=                   0 destE=15 destM=15 srcA=15 srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  69 valE=                 254 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  46 f_predPC=                  56 icode= 7 ifun= 0
+ 		 > rsp =                 254 rA= 5 rB= 6 valC=                  46 D_valP=                  80
+Decode stage E_ :- clk=1 E_stat= 8 icode= 6 ifun= 0 rsp =                 254
+ 		 > valA=                  50 valB=                -143 valC=                   2 destE= 6 destM=15 srcA= 5 srcB= 6
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  69 valE=                 254 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  56 f_predPC=                  58 icode= 7 ifun= 3
+ 		 > rsp =                 254 rA= 5 rB= 6 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 8 icode= 7 ifun= 0 rsp =                 254
+ 		 > valA=                  80 valB=                -143 valC=                  46 destE=15 destM=15 srcA=15 srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 6 rsp =                 254
+ 		 > CND=1 OF0 SF1 ZF0 valA =                  50 valE=                 -93 destE= 6 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  69 valE=                 254 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  58 f_predPC=                  60 icode=10 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=15 valC=                  56 D_valP=                  58
+Decode stage E_ :- clk=1 E_stat= 8 icode= 7 ifun= 3 rsp =                 254
+ 		 > valA=                  55 valB=                -143 valC=                  56 destE=15 destM=15 srcA=15 srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 7 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                  80 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 6 rsp=                 254
+ 		 > valM =                  69 valE=                 -93 destE= 6 destM=15
+fetch_stall0 D_bubble1 D_stall0 E_bubble1
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  60 f_predPC=                  55 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   0 valB=                   0 valC=                   0 destE=15 destM=15 srcA=15 srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 7 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                  55 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 7 rsp=                 254
+ 		 > valM =                  69 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 4 F_predPC=                  55 f_predPC=                  55 icode= 0 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                   0 destE=15 destM=15 srcA=15 srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                   0 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 7 rsp=                 254
+ 		 > valM =                  69 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 4 F_predPC=                  55 f_predPC=                  55 icode= 0 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 4 icode= 0 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                  56 destE=15 destM=15 srcA=15 srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  69 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 4 F_predPC=                  55 f_predPC=                  55 icode= 0 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 4 icode= 0 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                  56 destE=15 destM=15 srcA=15 srcB=15
+Execute stage M_ :- clk=1 M_stat= 4 icode= 0 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  69 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+halt
+VCD info: dumpfile processor.vcd opened for output.
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= x F_predPC=                   0 f_predPC=                   1 icode= x ifun= x
+ 		 > rsp =                   x rA= x rB= x valC=                   x D_valP=                   x
+Decode stage E_ :- clk=1 E_stat= x icode= x ifun= x rsp =                   x
+ 		 > valA=                   x valB=                   x valC=                   x destE= x destM= xE_srcA= xE_srcB= xd_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= x icode= x rsp =                   x
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE= x destM= x
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                   x
+ 		 > valM =                   x valE=                   x destE= x destM= x
+fetch_stallx D_bubblex D_stallx E_bubblex
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   0 f_predPC=                   1 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= x icode= x ifun= x rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= x icode= x rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE= x destM= x
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                 254
+ 		 > valM =                   x valE=                   x destE= x destM= x
+fetch_stallx D_bubblex D_stallx E_bubblex
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   0 f_predPC=                   1 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= x icode= x rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                 254
+ 		 > valM =                   x valE=                   x destE= x destM= x
+fetch_stallx D_bubblex D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   0 f_predPC=                   1 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   1 f_predPC=                   2 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   2 f_predPC=                   4 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   2
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   4 f_predPC=                  14 icode= 2 ifun= 0
+ 		 > rsp =                 254 rA= 1 rB= 2 valC=                   x D_valP=                   4
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 1d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  14 f_predPC=                  24 icode= 3 ifun= 0
+ 		 > rsp =                 254 rA=15 rB= 2 valC=                   2 D_valP=                  14
+Decode stage E_ :- clk=1 E_stat= 8 icode= 2 ifun= 0 rsp =                 254
+ 		 > valA=                  10 valB=                   0 valC=                   x destE= 2 destM=15E_srcA= 1E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=1 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  24 f_predPC=                  34 icode= 4 ifun= 0
+ 		 > rsp =                 254 rA= 2 rB= 4 valC=                   1 D_valP=                  24
+Decode stage E_ :- clk=1 E_stat= 8 icode= 3 ifun= 0 rsp =                 254
+ 		 > valA=                  10 valB=                   0 valC=                   2 destE= 2 destM=15E_srcA=15E_srcB=15d_srcA= 2d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 2 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                  10 valE=                  10 destE= 2 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  34 f_predPC=                  44 icode= 4 ifun= 0
+ 		 > rsp =                 254 rA= 5 rB= 3 valC=                   0 D_valP=                  34
+Decode stage E_ :- clk=1 E_stat= 8 icode= 4 ifun= 0 rsp =                 254
+ 		 > valA=                   2 valB=                 254 valC=                   1 destE=15 destM=15E_srcA= 2E_srcB= 4d_srcA= 5d_srcB= 3
+Execute stage M_ :- clk=1 M_stat= 8 icode= 3 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                  10 valE=                   2 destE= 2 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 2 rsp=                 254
+ 		 > valM =                   x valE=                  10 destE= 2 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  44 f_predPC=                  46 icode= 5 ifun= 0
+ 		 > rsp =                 254 rA= 5 rB= 3 valC=                   0 D_valP=                  44
+Decode stage E_ :- clk=1 E_stat= 8 icode= 4 ifun= 0 rsp =                 254
+ 		 > valA=                  50 valB=                   3 valC=                   0 destE=15 destM=15E_srcA= 5E_srcB= 3d_srcA=15d_srcB= 3
+Execute stage M_ :- clk=1 M_stat= 8 icode= 4 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   2 valE=                 255 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 3 rsp=                 254
+ 		 > valM =                   x valE=                   2 destE= 2 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  46 f_predPC=                  56 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=10 valC=                   0 D_valP=                  46
+Decode stage E_ :- clk=1 E_stat= 8 icode= 5 ifun= 0 rsp =                 254
+ 		 > valA=                  50 valB=                   3 valC=                   0 destE=15 destM= 5E_srcA=15E_srcB= 3d_srcA= 9d_srcB=10
+Execute stage M_ :- clk=1 M_stat= 8 icode= 4 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                  50 valE=                   3 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 4 rsp=                 254
+ 		 > valM =                   x valE=                 255 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  56 f_predPC=                  58 icode= 7 ifun= 3
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 8 icode= 6 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=               12345 valC=                   0 destE=10 destM=15E_srcA= 9E_srcB=10d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 5 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =                  50 valE=                   3 destE=15 destM= 5
+Memory stage W_:- clk=1 W_stat= 8 icode= 4 rsp=                 254
+ 		 > valM =                   x valE=                   3 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  58 f_predPC=                  60 icode=10 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=15 valC=                  56 D_valP=                  58
+Decode stage E_ :- clk=1 E_stat= 8 icode= 7 ifun= 3 rsp =                 254
+ 		 > valA=                  55 valB=               12345 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 9d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 6 rsp =                 254
+ 		 > CND=1 OF0 SF0 ZF1 valA =              -12345 valE=                   0 destE=10 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 5 rsp=                 254
+ 		 > valM =                  50 valE=                   3 destE=15 destM= 5
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  60 f_predPC=                  62 icode=11 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=15 valC=                  56 D_valP=                  60
+Decode stage E_ :- clk=1 E_stat= 8 icode=10 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                  56 destE= 4 destM=15E_srcA= 9E_srcB= 4d_srcA= 4d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 7 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =                  55 valE=                   0 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 6 rsp=                 254
+ 		 > valM =                  50 valE=                   0 destE=10 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  62 f_predPC=                  63 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=10 valC=                  56 D_valP=                  62
+Decode stage E_ :- clk=1 E_stat= 8 icode=11 ifun= 0 rsp =                 254
+ 		 > valA=                 253 valB=                 253 valC=                  56 destE= 4 destM= 9E_srcA= 4E_srcB= 4d_srcA= 9d_srcB=10
+Execute stage M_ :- clk=1 M_stat= 8 icode=10 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =              -12345 valE=                 253 destE= 4 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 7 rsp=                 254
+ 		 > valM =                  50 valE=                   0 destE=15 destM=15
+fetch_stall1 D_bubble0 D_stall1 E_bubble1
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  62 f_predPC=                  63 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=10 valC=                  56 D_valP=                  62
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   0 valB=                   0 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 9d_srcB=10
+Execute stage M_ :- clk=1 M_stat= 8 icode=11 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =                 253 valE=                 254 destE= 4 destM= 9
+Memory stage W_:- clk=1 W_stat= 8 icode=10 rsp=                 254
+ 		 > valM =                  50 valE=                 253 destE= 4 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  63 f_predPC=                  64 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                  56 D_valP=                  63
+Decode stage E_ :- clk=1 E_stat= 8 icode= 6 ifun= 0 rsp =                 253
+ 		 > valA=              -12345 valB=                   0 valC=                  56 destE=10 destM=15E_srcA= 9E_srcB=10d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =                   0 valE=                 254 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode=11 rsp=                 253
+ 		 > valM =              -12345 valE=                 254 destE= 4 destM= 9
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  64 f_predPC=                  65 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  64
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                   0 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 6 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -12345 destE=10 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =              -12345 valE=                 254 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  65 f_predPC=                  85 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  65
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                   0 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -12345 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 6 rsp=                 254
+ 		 > valM =              -12345 valE=              -12345 destE=10 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  85 f_predPC=                  87 icode= 8 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  85 D_valP=                  74
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                   0 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -12345 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =              -12345 valE=              -12345 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  87 f_predPC=                  97 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=10 valC=                  85 D_valP=                  87
+Decode stage E_ :- clk=1 E_stat= 8 icode= 8 ifun= 0 rsp =                 254
+ 		 > valA=                  74 valB=                 254 valC=                  85 destE= 4 destM=15E_srcA=15E_srcB= 4d_srcA= 9d_srcB=10
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -12345 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =              -12345 valE=              -12345 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  97 f_predPC=                  98 icode= 3 ifun= 0
+ 		 > rsp =                 254 rA=15 rB= 2 valC=                   2 D_valP=                  97
+Decode stage E_ :- clk=1 E_stat= 8 icode= 6 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=              -12345 valC=                  85 destE=10 destM=15E_srcA= 9E_srcB=10d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 8 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                  74 valE=                 253 destE= 4 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =              -12345 valE=              -12345 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  98 f_predPC=                  99 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   2 D_valP=                  98
+Decode stage E_ :- clk=1 E_stat= 8 icode= 3 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=              -12345 valC=                   2 destE= 2 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 6 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -24690 destE=10 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 8 rsp=                 254
+ 		 > valM =              -12345 valE=                 253 destE= 4 destM=15
+fetch_stall1 D_bubble0 D_stall1 E_bubble1
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  98 f_predPC=                  99 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   2 D_valP=                  98
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=                   0 valB=                   0 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 3 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                   2 destE= 2 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 6 rsp=                 253
+ 		 > valM =              -12345 valE=              -24690 destE=10 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  99 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   2 D_valP=                  99
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=              -12345 valB=              -12345 valC=                   2 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =                   0 valE=                   2 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 3 rsp=                 253
+ 		 > valM =              -12345 valE=                   2 destE= 2 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  99 icode= 9 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   2 D_valP=                 100
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=              -12345 valB=              -12345 valC=                   2 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 4d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                   2 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 253
+ 		 > valM =              -12345 valE=                   2 destE=15 destM=15
+fetch_stall1 D_bubble1 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  99 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 9 ifun= 0 rsp =                 253
+ 		 > valA=                 253 valB=                 253 valC=                   2 destE= 4 destM=15E_srcA= 4E_srcB= 4d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                   2 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 253
+ 		 > valM =              -12345 valE=                   2 destE=15 destM=15
+fetch_stall1 D_bubble1 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  99 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=                 253 valB=                 253 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 9 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE= 4 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 253
+ 		 > valM =              -12345 valE=                   2 destE=15 destM=15
+fetch_stall1 D_bubble1 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  76 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=                 253 valB=                 253 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 9 rsp=                 253
+ 		 > valM =                  74 valE=                 254 destE= 4 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  76 f_predPC=                  46 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 5 rB= 6 valC=                   2 D_valP=                  76
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                 253 valB=                 253 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 5d_srcB= 6
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 254 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  46 f_predPC=                  56 icode= 7 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  46 D_valP=                  85
+Decode stage E_ :- clk=1 E_stat= 8 icode= 6 ifun= 0 rsp =                 254
+ 		 > valA=                  50 valB=                -143 valC=                   2 destE= 6 destM=15E_srcA= 5E_srcB= 6d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 254 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  56 f_predPC=                  58 icode= 7 ifun= 3
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 8 icode= 7 ifun= 0 rsp =                 254
+ 		 > valA=                  85 valB=                -143 valC=                  46 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 6 rsp =                 254
+ 		 > CND=1 OF0 SF1 ZF0 valA =                  50 valE=                 -93 destE= 6 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 254 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  58 f_predPC=                  60 icode=10 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=15 valC=                  56 D_valP=                  58
+Decode stage E_ :- clk=1 E_stat= 8 icode= 7 ifun= 3 rsp =                 254
+ 		 > valA=                  55 valB=                -143 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 9d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 7 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                  85 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 6 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE= 6 destM=15
+fetch_stall0 D_bubble1 D_stall0 E_bubble1
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  60 f_predPC=                  55 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   0 valB=                   0 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 7 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                  55 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 7 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 4 F_predPC=                  55 f_predPC=                  55 icode= 0 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                   0 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 7 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 4 F_predPC=                  55 f_predPC=                  55 icode= 0 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 4 icode= 0 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 4 F_predPC=                  55 f_predPC=                  55 icode= 0 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 4 icode= 0 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 4 icode= 0 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+halt
+VCD info: dumpfile processor.vcd opened for output.
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= x F_predPC=                   0 f_predPC=                   1 icode= x ifun= x
+ 		 > rsp =                   x rA= x rB= x valC=                   x D_valP=                   x
+Decode stage E_ :- clk=1 E_stat= x icode= x ifun= x rsp =                   x
+ 		 > valA=                   x valB=                   x valC=                   x destE= x destM= xE_srcA= xE_srcB= xd_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= x icode= x rsp =                   x
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE= x destM= x
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                   x
+ 		 > valM =                   x valE=                   x destE= x destM= x
+fetch_stallx D_bubblex D_stallx E_bubblex
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   0 f_predPC=                   1 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= x icode= x ifun= x rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= x icode= x rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE= x destM= x
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                 254
+ 		 > valM =                   x valE=                   x destE= x destM= x
+fetch_stallx D_bubblex D_stallx E_bubblex
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   0 f_predPC=                   1 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= x icode= x rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                 254
+ 		 > valM =                   x valE=                   x destE= x destM= x
+fetch_stallx D_bubblex D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   0 f_predPC=                   1 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   1 f_predPC=                   2 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   2 f_predPC=                   4 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   2
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   4 f_predPC=                  14 icode= 2 ifun= 0
+ 		 > rsp =                 254 rA= 1 rB= 2 valC=                   x D_valP=                   4
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 1d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  14 f_predPC=                  24 icode= 3 ifun= 0
+ 		 > rsp =                 254 rA=15 rB= 2 valC=                   2 D_valP=                  14
+Decode stage E_ :- clk=1 E_stat= 8 icode= 2 ifun= 0 rsp =                 254
+ 		 > valA=                  10 valB=                   0 valC=                   x destE= 2 destM=15E_srcA= 1E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=1 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  24 f_predPC=                  34 icode= 4 ifun= 0
+ 		 > rsp =                 254 rA= 2 rB= 4 valC=                   1 D_valP=                  24
+Decode stage E_ :- clk=1 E_stat= 8 icode= 3 ifun= 0 rsp =                 254
+ 		 > valA=                  10 valB=                   0 valC=                   2 destE= 2 destM=15E_srcA=15E_srcB=15d_srcA= 2d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 2 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                  10 valE=                  10 destE= 2 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  34 f_predPC=                  44 icode= 4 ifun= 0
+ 		 > rsp =                 254 rA= 5 rB= 3 valC=                   0 D_valP=                  34
+Decode stage E_ :- clk=1 E_stat= 8 icode= 4 ifun= 0 rsp =                 254
+ 		 > valA=                   2 valB=                 254 valC=                   1 destE=15 destM=15E_srcA= 2E_srcB= 4d_srcA= 5d_srcB= 3
+Execute stage M_ :- clk=1 M_stat= 8 icode= 3 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                  10 valE=                   2 destE= 2 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 2 rsp=                 254
+ 		 > valM =                   x valE=                  10 destE= 2 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  44 f_predPC=                  46 icode= 5 ifun= 0
+ 		 > rsp =                 254 rA= 5 rB= 3 valC=                   0 D_valP=                  44
+Decode stage E_ :- clk=1 E_stat= 8 icode= 4 ifun= 0 rsp =                 254
+ 		 > valA=                  50 valB=                   3 valC=                   0 destE=15 destM=15E_srcA= 5E_srcB= 3d_srcA=15d_srcB= 3
+Execute stage M_ :- clk=1 M_stat= 8 icode= 4 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   2 valE=                 255 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 3 rsp=                 254
+ 		 > valM =                   x valE=                   2 destE= 2 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  46 f_predPC=                  56 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=10 valC=                   0 D_valP=                  46
+Decode stage E_ :- clk=1 E_stat= 8 icode= 5 ifun= 0 rsp =                 254
+ 		 > valA=                  50 valB=                   3 valC=                   0 destE=15 destM= 5E_srcA=15E_srcB= 3d_srcA= 9d_srcB=10
+Execute stage M_ :- clk=1 M_stat= 8 icode= 4 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                  50 valE=                   3 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 4 rsp=                 254
+ 		 > valM =                   x valE=                 255 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  56 f_predPC=                  58 icode= 7 ifun= 3
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 8 icode= 6 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=               12345 valC=                   0 destE=10 destM=15E_srcA= 9E_srcB=10d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 5 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =                  50 valE=                   3 destE=15 destM= 5
+Memory stage W_:- clk=1 W_stat= 8 icode= 4 rsp=                 254
+ 		 > valM =                   x valE=                   3 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  58 f_predPC=                  60 icode=10 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=15 valC=                  56 D_valP=                  58
+Decode stage E_ :- clk=1 E_stat= 8 icode= 7 ifun= 3 rsp =                 254
+ 		 > valA=                  55 valB=               12345 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 9d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 6 rsp =                 254
+ 		 > CND=1 OF0 SF0 ZF1 valA =              -12345 valE=                   0 destE=10 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 5 rsp=                 254
+ 		 > valM =                  50 valE=                   3 destE=15 destM= 5
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  60 f_predPC=                  62 icode=11 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=15 valC=                  56 D_valP=                  60
+Decode stage E_ :- clk=1 E_stat= 8 icode=10 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                  56 destE= 4 destM=15E_srcA= 9E_srcB= 4d_srcA= 4d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 7 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =                  55 valE=                   0 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 6 rsp=                 254
+ 		 > valM =                  50 valE=                   0 destE=10 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  62 f_predPC=                  63 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=10 valC=                  56 D_valP=                  62
+Decode stage E_ :- clk=1 E_stat= 8 icode=11 ifun= 0 rsp =                 254
+ 		 > valA=                 253 valB=                 253 valC=                  56 destE= 4 destM= 9E_srcA= 4E_srcB= 4d_srcA= 9d_srcB=10
+Execute stage M_ :- clk=1 M_stat= 8 icode=10 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =              -12345 valE=                 253 destE= 4 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 7 rsp=                 254
+ 		 > valM =                  50 valE=                   0 destE=15 destM=15
+fetch_stall1 D_bubble0 D_stall1 E_bubble1
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  62 f_predPC=                  63 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=10 valC=                  56 D_valP=                  62
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   0 valB=                   0 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 9d_srcB=10
+Execute stage M_ :- clk=1 M_stat= 8 icode=11 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =                 253 valE=                 254 destE= 4 destM= 9
+Memory stage W_:- clk=1 W_stat= 8 icode=10 rsp=                 254
+ 		 > valM =                  50 valE=                 253 destE= 4 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  63 f_predPC=                  64 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                  56 D_valP=                  63
+Decode stage E_ :- clk=1 E_stat= 8 icode= 6 ifun= 0 rsp =                 253
+ 		 > valA=              -12345 valB=                   0 valC=                  56 destE=10 destM=15E_srcA= 9E_srcB=10d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =                   0 valE=                 254 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode=11 rsp=                 253
+ 		 > valM =              -12345 valE=                 254 destE= 4 destM= 9
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  64 f_predPC=                  65 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  64
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                   0 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 6 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -12345 destE=10 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =              -12345 valE=                 254 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  65 f_predPC=                  85 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  65
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                   0 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -12345 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 6 rsp=                 254
+ 		 > valM =              -12345 valE=              -12345 destE=10 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  85 f_predPC=                  87 icode= 8 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  85 D_valP=                  74
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                   0 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -12345 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =              -12345 valE=              -12345 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  87 f_predPC=                  97 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=10 valC=                  85 D_valP=                  87
+Decode stage E_ :- clk=1 E_stat= 8 icode= 8 ifun= 0 rsp =                 254
+ 		 > valA=                  74 valB=                 254 valC=                  85 destE= 4 destM=15E_srcA=15E_srcB= 4d_srcA= 9d_srcB=10
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -12345 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =              -12345 valE=              -12345 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  97 f_predPC=                  98 icode= 3 ifun= 0
+ 		 > rsp =                 254 rA=15 rB= 2 valC=                   2 D_valP=                  97
+Decode stage E_ :- clk=1 E_stat= 8 icode= 6 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=              -12345 valC=                  85 destE=10 destM=15E_srcA= 9E_srcB=10d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 8 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                  74 valE=                 253 destE= 4 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =              -12345 valE=              -12345 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  98 f_predPC=                  99 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   2 D_valP=                  98
+Decode stage E_ :- clk=1 E_stat= 8 icode= 3 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=              -12345 valC=                   2 destE= 2 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 6 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -24690 destE=10 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 8 rsp=                 254
+ 		 > valM =              -12345 valE=                 253 destE= 4 destM=15
+fetch_stall1 D_bubble0 D_stall1 E_bubble1
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  98 f_predPC=                  99 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   2 D_valP=                  98
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=                   0 valB=                   0 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 3 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                   2 destE= 2 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 6 rsp=                 253
+ 		 > valM =              -12345 valE=              -24690 destE=10 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  99 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   2 D_valP=                  99
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=              -12345 valB=              -12345 valC=                   2 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =                   0 valE=                   2 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 3 rsp=                 253
+ 		 > valM =              -12345 valE=                   2 destE= 2 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  99 icode= 9 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   2 D_valP=                 100
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=              -12345 valB=              -12345 valC=                   2 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 4d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                   2 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 253
+ 		 > valM =              -12345 valE=                   2 destE=15 destM=15
+fetch_stall1 D_bubble1 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  99 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 9 ifun= 0 rsp =                 253
+ 		 > valA=                 253 valB=                 253 valC=                   2 destE= 4 destM=15E_srcA= 4E_srcB= 4d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                   2 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 253
+ 		 > valM =              -12345 valE=                   2 destE=15 destM=15
+fetch_stall1 D_bubble1 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  99 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=                 253 valB=                 253 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 9 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE= 4 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 253
+ 		 > valM =              -12345 valE=                   2 destE=15 destM=15
+fetch_stall1 D_bubble1 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  76 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=                 253 valB=                 253 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 9 rsp=                 253
+ 		 > valM =                  74 valE=                 254 destE= 4 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  76 f_predPC=                  46 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 5 rB= 6 valC=                   2 D_valP=                  76
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                 253 valB=                 253 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 5d_srcB= 6
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 254 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  46 f_predPC=                  56 icode= 7 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  46 D_valP=                  85
+Decode stage E_ :- clk=1 E_stat= 8 icode= 6 ifun= 0 rsp =                 254
+ 		 > valA=                  50 valB=                -143 valC=                   2 destE= 6 destM=15E_srcA= 5E_srcB= 6d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 254 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  56 f_predPC=                  58 icode= 7 ifun= 3
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 8 icode= 7 ifun= 0 rsp =                 254
+ 		 > valA=                  85 valB=                -143 valC=                  46 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 6 rsp =                 254
+ 		 > CND=1 OF0 SF1 ZF0 valA =                  50 valE=                 -93 destE= 6 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 254 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  58 f_predPC=                  60 icode=10 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=15 valC=                  56 D_valP=                  58
+Decode stage E_ :- clk=1 E_stat= 8 icode= 7 ifun= 3 rsp =                 254
+ 		 > valA=                  55 valB=                -143 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 9d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 7 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                  85 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 6 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE= 6 destM=15
+fetch_stall0 D_bubble1 D_stall0 E_bubble1
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  60 f_predPC=                  55 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   0 valB=                   0 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 7 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                  55 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 7 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 4 F_predPC=                  55 f_predPC=                  55 icode= 0 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                   0 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 7 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 4 F_predPC=                  55 f_predPC=                  55 icode= 0 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 4 icode= 0 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 4 F_predPC=                  55 f_predPC=                  55 icode= 0 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 4 icode= 0 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 4 icode= 0 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+halt
+VCD info: dumpfile processor.vcd opened for output.
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= x F_predPC=                   0 f_predPC=                   1 icode= x ifun= x
+ 		 > rsp =                   x rA= x rB= x valC=                   x D_valP=                   x
+Decode stage E_ :- clk=1 E_stat= x icode= x ifun= x rsp =                   x
+ 		 > valA=                   x valB=                   x valC=                   x destE= x destM= xE_srcA= xE_srcB= xd_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= x icode= x rsp =                   x
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE= x destM= x
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                   x
+ 		 > valM =                   x valE=                   x destE= x destM= x
+fetch_stallx D_bubblex D_stallx E_bubblex
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   0 f_predPC=                   1 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= x icode= x ifun= x rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= x icode= x rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE= x destM= x
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                 254
+ 		 > valM =                   x valE=                   x destE= x destM= x
+fetch_stallx D_bubblex D_stallx E_bubblex
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   0 f_predPC=                   1 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= x icode= x rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                 254
+ 		 > valM =                   x valE=                   x destE= x destM= x
+fetch_stallx D_bubblex D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   0 f_predPC=                   1 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   1 f_predPC=                   2 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   2 f_predPC=                   4 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   2
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   4 f_predPC=                  14 icode= 2 ifun= 0
+ 		 > rsp =                 254 rA= 1 rB= 2 valC=                   x D_valP=                   4
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 1d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  14 f_predPC=                  24 icode= 3 ifun= 0
+ 		 > rsp =                 254 rA=15 rB= 2 valC=                   2 D_valP=                  14
+Decode stage E_ :- clk=1 E_stat= 8 icode= 2 ifun= 0 rsp =                 254
+ 		 > valA=                  10 valB=                   0 valC=                   x destE= 2 destM=15E_srcA= 1E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=1 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  24 f_predPC=                  34 icode= 4 ifun= 0
+ 		 > rsp =                 254 rA= 2 rB= 4 valC=                   1 D_valP=                  24
+Decode stage E_ :- clk=1 E_stat= 8 icode= 3 ifun= 0 rsp =                 254
+ 		 > valA=                  10 valB=                   0 valC=                   2 destE= 2 destM=15E_srcA=15E_srcB=15d_srcA= 2d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 2 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                  10 valE=                  10 destE= 2 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  34 f_predPC=                  44 icode= 4 ifun= 0
+ 		 > rsp =                 254 rA= 5 rB= 3 valC=                   0 D_valP=                  34
+Decode stage E_ :- clk=1 E_stat= 8 icode= 4 ifun= 0 rsp =                 254
+ 		 > valA=                   2 valB=                 254 valC=                   1 destE=15 destM=15E_srcA= 2E_srcB= 4d_srcA= 5d_srcB= 3
+Execute stage M_ :- clk=1 M_stat= 8 icode= 3 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                  10 valE=                   2 destE= 2 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 2 rsp=                 254
+ 		 > valM =                   x valE=                  10 destE= 2 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  44 f_predPC=                  46 icode= 5 ifun= 0
+ 		 > rsp =                 254 rA= 5 rB= 3 valC=                   0 D_valP=                  44
+Decode stage E_ :- clk=1 E_stat= 8 icode= 4 ifun= 0 rsp =                 254
+ 		 > valA=                  50 valB=                   3 valC=                   0 destE=15 destM=15E_srcA= 5E_srcB= 3d_srcA=15d_srcB= 3
+Execute stage M_ :- clk=1 M_stat= 8 icode= 4 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   2 valE=                 255 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 3 rsp=                 254
+ 		 > valM =                   x valE=                   2 destE= 2 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  46 f_predPC=                  56 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=10 valC=                   0 D_valP=                  46
+Decode stage E_ :- clk=1 E_stat= 8 icode= 5 ifun= 0 rsp =                 254
+ 		 > valA=                  50 valB=                   3 valC=                   0 destE=15 destM= 5E_srcA=15E_srcB= 3d_srcA= 9d_srcB=10
+Execute stage M_ :- clk=1 M_stat= 8 icode= 4 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                  50 valE=                   3 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 4 rsp=                 254
+ 		 > valM =                   x valE=                 255 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  56 f_predPC=                  58 icode= 7 ifun= 3
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 8 icode= 6 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=               12345 valC=                   0 destE=10 destM=15E_srcA= 9E_srcB=10d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 5 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =                  50 valE=                   3 destE=15 destM= 5
+Memory stage W_:- clk=1 W_stat= 8 icode= 4 rsp=                 254
+ 		 > valM =                   x valE=                   3 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  58 f_predPC=                  60 icode=10 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=15 valC=                  56 D_valP=                  58
+Decode stage E_ :- clk=1 E_stat= 8 icode= 7 ifun= 3 rsp =                 254
+ 		 > valA=                  55 valB=               12345 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 9d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 6 rsp =                 254
+ 		 > CND=1 OF0 SF0 ZF1 valA =              -12345 valE=                   0 destE=10 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 5 rsp=                 254
+ 		 > valM =                  50 valE=                   3 destE=15 destM= 5
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  60 f_predPC=                  62 icode=11 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=15 valC=                  56 D_valP=                  60
+Decode stage E_ :- clk=1 E_stat= 8 icode=10 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                  56 destE= 4 destM=15E_srcA= 9E_srcB= 4d_srcA= 4d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 7 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =                  55 valE=                   0 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 6 rsp=                 254
+ 		 > valM =                  50 valE=                   0 destE=10 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  62 f_predPC=                  63 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=10 valC=                  56 D_valP=                  62
+Decode stage E_ :- clk=1 E_stat= 8 icode=11 ifun= 0 rsp =                 254
+ 		 > valA=                 253 valB=                 253 valC=                  56 destE= 4 destM= 9E_srcA= 4E_srcB= 4d_srcA= 9d_srcB=10
+Execute stage M_ :- clk=1 M_stat= 8 icode=10 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =              -12345 valE=                 253 destE= 4 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 7 rsp=                 254
+ 		 > valM =                  50 valE=                   0 destE=15 destM=15
+fetch_stall1 D_bubble0 D_stall1 E_bubble1
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  62 f_predPC=                  63 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=10 valC=                  56 D_valP=                  62
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   0 valB=                   0 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 9d_srcB=10
+Execute stage M_ :- clk=1 M_stat= 8 icode=11 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =                 253 valE=                 254 destE= 4 destM= 9
+Memory stage W_:- clk=1 W_stat= 8 icode=10 rsp=                 254
+ 		 > valM =                  50 valE=                 253 destE= 4 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  63 f_predPC=                  64 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                  56 D_valP=                  63
+Decode stage E_ :- clk=1 E_stat= 8 icode= 6 ifun= 0 rsp =                 253
+ 		 > valA=              -12345 valB=                   0 valC=                  56 destE=10 destM=15E_srcA= 9E_srcB=10d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =                   0 valE=                 254 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode=11 rsp=                 253
+ 		 > valM =              -12345 valE=                 254 destE= 4 destM= 9
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  64 f_predPC=                  65 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  64
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                   0 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 6 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -12345 destE=10 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =              -12345 valE=                 254 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  65 f_predPC=                  85 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  65
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                   0 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -12345 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 6 rsp=                 254
+ 		 > valM =              -12345 valE=              -12345 destE=10 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  85 f_predPC=                  87 icode= 8 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  85 D_valP=                  74
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                   0 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -12345 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =              -12345 valE=              -12345 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  87 f_predPC=                  97 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=10 valC=                  85 D_valP=                  87
+Decode stage E_ :- clk=1 E_stat= 8 icode= 8 ifun= 0 rsp =                 254
+ 		 > valA=                  74 valB=                 254 valC=                  85 destE= 4 destM=15E_srcA=15E_srcB= 4d_srcA= 9d_srcB=10
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -12345 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =              -12345 valE=              -12345 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  97 f_predPC=                  98 icode= 3 ifun= 0
+ 		 > rsp =                 254 rA=15 rB= 2 valC=                   2 D_valP=                  97
+Decode stage E_ :- clk=1 E_stat= 8 icode= 6 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=              -12345 valC=                  85 destE=10 destM=15E_srcA= 9E_srcB=10d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 8 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                  74 valE=                 253 destE= 4 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =              -12345 valE=              -12345 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  98 f_predPC=                  99 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   2 D_valP=                  98
+Decode stage E_ :- clk=1 E_stat= 8 icode= 3 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=              -12345 valC=                   2 destE= 2 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 6 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -24690 destE=10 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 8 rsp=                 254
+ 		 > valM =              -12345 valE=                 253 destE= 4 destM=15
+fetch_stall1 D_bubble0 D_stall1 E_bubble1
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  98 f_predPC=                  99 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   2 D_valP=                  98
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=                   0 valB=                   0 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 3 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                   2 destE= 2 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 6 rsp=                 253
+ 		 > valM =              -12345 valE=              -24690 destE=10 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  99 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   2 D_valP=                  99
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=              -12345 valB=              -12345 valC=                   2 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =                   0 valE=                   2 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 3 rsp=                 253
+ 		 > valM =              -12345 valE=                   2 destE= 2 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  99 icode= 9 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   2 D_valP=                 100
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=              -12345 valB=              -12345 valC=                   2 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 4d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                   2 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 253
+ 		 > valM =              -12345 valE=                   2 destE=15 destM=15
+fetch_stall1 D_bubble1 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  99 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 9 ifun= 0 rsp =                 253
+ 		 > valA=                 253 valB=                 253 valC=                   2 destE= 4 destM=15E_srcA= 4E_srcB= 4d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                   2 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 253
+ 		 > valM =              -12345 valE=                   2 destE=15 destM=15
+fetch_stall1 D_bubble1 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  99 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=                 253 valB=                 253 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 9 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE= 4 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 253
+ 		 > valM =              -12345 valE=                   2 destE=15 destM=15
+fetch_stall1 D_bubble1 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  76 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=                 253 valB=                 253 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 9 rsp=                 253
+ 		 > valM =                  74 valE=                 254 destE= 4 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  76 f_predPC=                  46 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 5 rB= 6 valC=                   2 D_valP=                  76
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                 253 valB=                 253 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 5d_srcB= 6
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 254 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  46 f_predPC=                  56 icode= 7 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  46 D_valP=                  85
+Decode stage E_ :- clk=1 E_stat= 8 icode= 6 ifun= 0 rsp =                 254
+ 		 > valA=                  50 valB=                -143 valC=                   2 destE= 6 destM=15E_srcA= 5E_srcB= 6d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 254 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  56 f_predPC=                  58 icode= 7 ifun= 3
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 8 icode= 7 ifun= 0 rsp =                 254
+ 		 > valA=                  85 valB=                -143 valC=                  46 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 6 rsp =                 254
+ 		 > CND=1 OF0 SF1 ZF0 valA =                  50 valE=                 -93 destE= 6 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 254 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  58 f_predPC=                  60 icode=10 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=15 valC=                  56 D_valP=                  58
+Decode stage E_ :- clk=1 E_stat= 8 icode= 7 ifun= 3 rsp =                 254
+ 		 > valA=                  55 valB=                -143 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 9d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 7 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                  85 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 6 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE= 6 destM=15
+fetch_stall0 D_bubble1 D_stall0 E_bubble1
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  60 f_predPC=                  55 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   0 valB=                   0 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 7 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                  55 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 7 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 4 F_predPC=                  55 f_predPC=                  55 icode= 0 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                   0 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 7 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 4 F_predPC=                  55 f_predPC=                  55 icode= 0 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 4 icode= 0 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 4 F_predPC=                  55 f_predPC=                  55 icode= 0 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 4 icode= 0 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 4 icode= 0 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+halt
+VCD info: dumpfile processor.vcd opened for output.
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= x F_predPC=                   0 f_predPC=                   1 icode= x ifun= x
+ 		 > rsp =                   x rA= x rB= x valC=                   x D_valP=                   x
+Decode stage E_ :- clk=1 E_stat= x icode= x ifun= x rsp =                   x
+ 		 > valA=                   x valB=                   x valC=                   x destE= x destM= xE_srcA= xE_srcB= xd_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= x icode= x rsp =                   x
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE= x destM= x
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                   x
+ 		 > valM =                   x valE=                   x destE= x destM= x
+fetch_stallx D_bubblex D_stallx E_bubblex
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   0 f_predPC=                   1 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= x icode= x ifun= x rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= x icode= x rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE= x destM= x
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                 254
+ 		 > valM =                   x valE=                   x destE= x destM= x
+fetch_stallx D_bubblex D_stall0 E_bubblex
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   0 f_predPC=                   1 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= x icode= x rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                 254
+ 		 > valM =                   x valE=                   x destE= x destM= x
+fetch_stallx D_bubblex D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   0 f_predPC=                   1 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= x icode= x rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   1 f_predPC=                   2 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   1
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   2 f_predPC=                   4 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   x D_valP=                   2
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                   4 f_predPC=                  14 icode= 2 ifun= 0
+ 		 > rsp =                 254 rA= 1 rB= 2 valC=                   x D_valP=                   4
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   x valB=                   x valC=                   x destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 1d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  14 f_predPC=                  24 icode= 3 ifun= 0
+ 		 > rsp =                 254 rA=15 rB= 2 valC=                   2 D_valP=                  14
+Decode stage E_ :- clk=1 E_stat= 8 icode= 2 ifun= 0 rsp =                 254
+ 		 > valA=                  10 valB=                   0 valC=                   x destE= 2 destM=15E_srcA= 1E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=1 OF0 SF0 ZF0 valA =                   x valE=                   x destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  24 f_predPC=                  34 icode= 4 ifun= 0
+ 		 > rsp =                 254 rA= 2 rB= 4 valC=                   1 D_valP=                  24
+Decode stage E_ :- clk=1 E_stat= 8 icode= 3 ifun= 0 rsp =                 254
+ 		 > valA=                  10 valB=                   0 valC=                   2 destE= 2 destM=15E_srcA=15E_srcB=15d_srcA= 2d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 2 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                  10 valE=                  10 destE= 2 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                   x valE=                   x destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  34 f_predPC=                  44 icode= 4 ifun= 0
+ 		 > rsp =                 254 rA= 5 rB= 3 valC=                   0 D_valP=                  34
+Decode stage E_ :- clk=1 E_stat= 8 icode= 4 ifun= 0 rsp =                 254
+ 		 > valA=                   2 valB=                 254 valC=                   1 destE=15 destM=15E_srcA= 2E_srcB= 4d_srcA= 5d_srcB= 3
+Execute stage M_ :- clk=1 M_stat= 8 icode= 3 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                  10 valE=                   2 destE= 2 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 2 rsp=                 254
+ 		 > valM =                   x valE=                  10 destE= 2 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  44 f_predPC=                  46 icode= 5 ifun= 0
+ 		 > rsp =                 254 rA= 5 rB= 3 valC=                   0 D_valP=                  44
+Decode stage E_ :- clk=1 E_stat= 8 icode= 4 ifun= 0 rsp =                 254
+ 		 > valA=                  50 valB=                   3 valC=                   0 destE=15 destM=15E_srcA= 5E_srcB= 3d_srcA=15d_srcB= 3
+Execute stage M_ :- clk=1 M_stat= 8 icode= 4 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                   2 valE=                 255 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 3 rsp=                 254
+ 		 > valM =                   x valE=                   2 destE= 2 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  46 f_predPC=                  56 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=10 valC=                   0 D_valP=                  46
+Decode stage E_ :- clk=1 E_stat= 8 icode= 5 ifun= 0 rsp =                 254
+ 		 > valA=                  50 valB=                   3 valC=                   0 destE=15 destM= 5E_srcA=15E_srcB= 3d_srcA= 9d_srcB=10
+Execute stage M_ :- clk=1 M_stat= 8 icode= 4 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF0 valA =                  50 valE=                   3 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 4 rsp=                 254
+ 		 > valM =                   x valE=                 255 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  56 f_predPC=                  58 icode= 7 ifun= 3
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 8 icode= 6 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=               12345 valC=                   0 destE=10 destM=15E_srcA= 9E_srcB=10d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 5 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =                  50 valE=                   3 destE=15 destM= 5
+Memory stage W_:- clk=1 W_stat= 8 icode= 4 rsp=                 254
+ 		 > valM =                   x valE=                   3 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  58 f_predPC=                  60 icode=10 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=15 valC=                  56 D_valP=                  58
+Decode stage E_ :- clk=1 E_stat= 8 icode= 7 ifun= 3 rsp =                 254
+ 		 > valA=                  55 valB=               12345 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 9d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 6 rsp =                 254
+ 		 > CND=1 OF0 SF0 ZF1 valA =              -12345 valE=                   0 destE=10 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 5 rsp=                 254
+ 		 > valM =                  50 valE=                   3 destE=15 destM= 5
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  60 f_predPC=                  62 icode=11 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=15 valC=                  56 D_valP=                  60
+Decode stage E_ :- clk=1 E_stat= 8 icode=10 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                  56 destE= 4 destM=15E_srcA= 9E_srcB= 4d_srcA= 4d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 7 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =                  55 valE=                   0 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 6 rsp=                 254
+ 		 > valM =                  50 valE=                   0 destE=10 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  62 f_predPC=                  63 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=10 valC=                  56 D_valP=                  62
+Decode stage E_ :- clk=1 E_stat= 8 icode=11 ifun= 0 rsp =                 254
+ 		 > valA=                 253 valB=                 253 valC=                  56 destE= 4 destM= 9E_srcA= 4E_srcB= 4d_srcA= 9d_srcB=10
+Execute stage M_ :- clk=1 M_stat= 8 icode=10 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =              -12345 valE=                 253 destE= 4 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 7 rsp=                 254
+ 		 > valM =                  50 valE=                   0 destE=15 destM=15
+fetch_stall1 D_bubble0 D_stall1 E_bubble1
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  62 f_predPC=                  63 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=10 valC=                  56 D_valP=                  62
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   0 valB=                   0 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 9d_srcB=10
+Execute stage M_ :- clk=1 M_stat= 8 icode=11 rsp =                 254
+ 		 > CND=0 OF0 SF0 ZF1 valA =                 253 valE=                 254 destE= 4 destM= 9
+Memory stage W_:- clk=1 W_stat= 8 icode=10 rsp=                 254
+ 		 > valM =                  50 valE=                 253 destE= 4 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  63 f_predPC=                  64 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                  56 D_valP=                  63
+Decode stage E_ :- clk=1 E_stat= 8 icode= 6 ifun= 0 rsp =                 253
+ 		 > valA=              -12345 valB=                   0 valC=                  56 destE=10 destM=15E_srcA= 9E_srcB=10d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =                   0 valE=                 254 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode=11 rsp=                 253
+ 		 > valM =              -12345 valE=                 254 destE= 4 destM= 9
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  64 f_predPC=                  65 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  64
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                   0 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 6 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -12345 destE=10 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =              -12345 valE=                 254 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  65 f_predPC=                  85 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  65
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                   0 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -12345 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 6 rsp=                 254
+ 		 > valM =              -12345 valE=              -12345 destE=10 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  85 f_predPC=                  87 icode= 8 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  85 D_valP=                  74
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                   0 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -12345 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =              -12345 valE=              -12345 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  87 f_predPC=                  97 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=10 valC=                  85 D_valP=                  87
+Decode stage E_ :- clk=1 E_stat= 8 icode= 8 ifun= 0 rsp =                 254
+ 		 > valA=                  74 valB=                 254 valC=                  85 destE= 4 destM=15E_srcA=15E_srcB= 4d_srcA= 9d_srcB=10
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -12345 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =              -12345 valE=              -12345 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  97 f_predPC=                  98 icode= 3 ifun= 0
+ 		 > rsp =                 254 rA=15 rB= 2 valC=                   2 D_valP=                  97
+Decode stage E_ :- clk=1 E_stat= 8 icode= 6 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=              -12345 valC=                  85 destE=10 destM=15E_srcA= 9E_srcB=10d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 8 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                  74 valE=                 253 destE= 4 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =              -12345 valE=              -12345 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  98 f_predPC=                  99 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   2 D_valP=                  98
+Decode stage E_ :- clk=1 E_stat= 8 icode= 3 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=              -12345 valC=                   2 destE= 2 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 6 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=              -24690 destE=10 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 8 rsp=                 254
+ 		 > valM =              -12345 valE=                 253 destE= 4 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  99 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   2 D_valP=                  99
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=              -12345 valB=              -12345 valC=                   2 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 3 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                   2 destE= 2 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 6 rsp=                 253
+ 		 > valM =              -12345 valE=              -24690 destE=10 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  99 icode= 9 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   2 D_valP=                 100
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=              -12345 valB=              -12345 valC=                   2 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 4d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                   2 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 3 rsp=                 253
+ 		 > valM =              -12345 valE=                   2 destE= 2 destM=15
+fetch_stall1 D_bubble1 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  99 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 9 ifun= 0 rsp =                 253
+ 		 > valA=                 253 valB=                 253 valC=                   2 destE= 4 destM=15E_srcA= 4E_srcB= 4d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                   2 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 253
+ 		 > valM =              -12345 valE=                   2 destE=15 destM=15
+fetch_stall1 D_bubble1 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  99 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=                 253 valB=                 253 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 9 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE= 4 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 253
+ 		 > valM =              -12345 valE=                   2 destE=15 destM=15
+fetch_stall1 D_bubble1 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  99 f_predPC=                  76 icode= 1 ifun= 0
+ 		 > rsp =                 253 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 253
+ 		 > valA=                 253 valB=                 253 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 253
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 9 rsp=                 253
+ 		 > valM =                  74 valE=                 254 destE= 4 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  76 f_predPC=                  46 icode= 6 ifun= 0
+ 		 > rsp =                 254 rA= 5 rB= 6 valC=                   2 D_valP=                  76
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                 253 valB=                 253 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 5d_srcB= 6
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 254 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  46 f_predPC=                  56 icode= 7 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  46 D_valP=                  85
+Decode stage E_ :- clk=1 E_stat= 8 icode= 6 ifun= 0 rsp =                 254
+ 		 > valA=                  50 valB=                -143 valC=                   2 destE= 6 destM=15E_srcA= 5E_srcB= 6d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                 253 valE=                 254 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 254 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  56 f_predPC=                  58 icode= 7 ifun= 3
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 8 icode= 7 ifun= 0 rsp =                 254
+ 		 > valA=                  85 valB=                -143 valC=                  46 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 6 rsp =                 254
+ 		 > CND=1 OF0 SF1 ZF0 valA =                  50 valE=                 -93 destE= 6 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 254 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  58 f_predPC=                  60 icode=10 ifun= 0
+ 		 > rsp =                 254 rA= 9 rB=15 valC=                  56 D_valP=                  58
+Decode stage E_ :- clk=1 E_stat= 8 icode= 7 ifun= 3 rsp =                 254
+ 		 > valA=                  55 valB=                -143 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA= 9d_srcB= 4
+Execute stage M_ :- clk=1 M_stat= 8 icode= 7 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                  85 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 6 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE= 6 destM=15
+fetch_stall0 D_bubble1 D_stall0 E_bubble1
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 8 F_predPC=                  60 f_predPC=                  55 icode= 1 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                   0 D_valP=                   0
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=                   0 valB=                   0 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 7 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                  55 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 7 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 4 F_predPC=                  55 f_predPC=                  55 icode= 0 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 8 icode= 1 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                   0 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =                   0 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 7 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 4 F_predPC=                  55 f_predPC=                  55 icode= 0 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 4 icode= 0 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 8 icode= 1 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+
+------------------------------------------------------------
+Fetch stage D_ :- clk=1 D_stat= 4 F_predPC=                  55 f_predPC=                  55 icode= 0 ifun= 0
+ 		 > rsp =                 254 rA=15 rB=15 valC=                  56 D_valP=                  55
+Decode stage E_ :- clk=1 E_stat= 4 icode= 0 ifun= 0 rsp =                 254
+ 		 > valA=              -12345 valB=                 254 valC=                  56 destE=15 destM=15E_srcA=15E_srcB=15d_srcA=15d_srcB=15
+Execute stage M_ :- clk=1 M_stat= 4 icode= 0 rsp =                 254
+ 		 > CND=0 OF0 SF1 ZF0 valA =              -12345 valE=                 -93 destE=15 destM=15
+Memory stage W_:- clk=1 W_stat= 8 icode= 1 rsp=                 254
+ 		 > valM =                  74 valE=                 -93 destE=15 destM=15
+fetch_stall0 D_bubble0 D_stall0 E_bubble0
+------------------------------------------------------------
+halt
